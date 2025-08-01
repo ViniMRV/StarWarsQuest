@@ -1,0 +1,716 @@
+[
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.CharactersController",
+    "Method": "GetAll",
+    "RelativePath": "api/Characters",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[StarWarsQuest.Api.DTO.CharactersDTOs.CharacterDTO, StarWarsQuest.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.CharactersController",
+    "Method": "CreateCharacter",
+    "RelativePath": "api/Characters",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "character",
+        "Type": "StarWarsQuest.Api.DTO.CharactersDTOs.CharacterDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "StarWarsQuest.Api.Models.Character",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.CharactersController",
+    "Method": "GetById",
+    "RelativePath": "api/Characters/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "StarWarsQuest.Api.Models.Character",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetCharacter"
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.CharactersController",
+    "Method": "DeleteCharacter",
+    "RelativePath": "api/Characters/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "StarWarsQuest.Api.Models.Character",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.CharactersController",
+    "Method": "UpdateCharacter",
+    "RelativePath": "api/Characters/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "character",
+        "Type": "StarWarsQuest.Api.DTO.CharactersDTOs.CharacterDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "StarWarsQuest.Api.Models.Character",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.CharactersController",
+    "Method": "GetByName",
+    "RelativePath": "api/Characters/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "StarWarsQuest.Api.Models.Character",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.CharactersController",
+    "Method": "GetAssignedQuest",
+    "RelativePath": "api/Characters/assignedquest/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "StarWarsQuest.Api.Models.Quest",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.CharactersController",
+    "Method": "FindAvaliables",
+    "RelativePath": "api/Characters/avaliable",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[StarWarsQuest.Api.DTO.CharactersDTOs.CharacterDTO, StarWarsQuest.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.PlanetsController",
+    "Method": "Create",
+    "RelativePath": "api/Planets",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "StarWarsQuest.Api.Commands.CreatePlanetCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.PlanetsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Planets",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.PlanetsController",
+    "Method": "GetById",
+    "RelativePath": "api/Planets/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.QuestsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Quests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[StarWarsQuest.Api.Models.Quest, StarWarsQuest.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.QuestsController",
+    "Method": "CreateQuest",
+    "RelativePath": "api/Quests",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quest",
+        "Type": "StarWarsQuest.Api.DTO.QuestsDTOs.CreateQuestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "StarWarsQuest.Api.Models.Quest",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.QuestsController",
+    "Method": "GetById",
+    "RelativePath": "api/Quests/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "StarWarsQuest.Api.Models.Quest",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetQuest"
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.QuestsController",
+    "Method": "DeleteQuest",
+    "RelativePath": "api/Quests/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "StarWarsQuest.Api.Models.Quest",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.QuestsController",
+    "Method": "UpdateQuest",
+    "RelativePath": "api/Quests/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "quest",
+        "Type": "StarWarsQuest.Api.DTO.QuestsDTOs.UpdateQuestDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "StarWarsQuest.Api.Models.Quest",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.QuestsController",
+    "Method": "AssignParticipants",
+    "RelativePath": "api/Quests/assign",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "association",
+        "Type": "StarWarsQuest.Api.DTO.QuestsDTOs.QuestAssociationsDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "StarWarsQuest.Api.DTO.QuestsDTOs.QuestAssociationsDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.QuestsController",
+    "Method": "EndQuest",
+    "RelativePath": "api/Quests/end/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "StarWarsQuest.Api.Models.Quest",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.QuestsController",
+    "Method": "GetAllFinisheds",
+    "RelativePath": "api/Quests/finisheds",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[StarWarsQuest.Api.Models.Quest, StarWarsQuest.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.QuestsController",
+    "Method": "StartQuest",
+    "RelativePath": "api/Quests/start/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "StarWarsQuest.Api.Models.Quest",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.QuestsController",
+    "Method": "GetAllStarteds",
+    "RelativePath": "api/Quests/started",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[StarWarsQuest.Api.Models.Quest, StarWarsQuest.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.QuestsController",
+    "Method": "GetAllNonStarteds",
+    "RelativePath": "api/Quests/tostart",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[StarWarsQuest.Api.Models.Quest, StarWarsQuest.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.SpaceshipsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Spaceships",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[StarWarsQuest.Api.Models.Spaceship, StarWarsQuest.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.SpaceshipsController",
+    "Method": "Create",
+    "RelativePath": "api/Spaceships",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "spaceship",
+        "Type": "StarWarsQuest.Api.DTO.SpaceshipsDTOs.SpaceshipDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "StarWarsQuest.Api.Models.Spaceship",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.SpaceshipsController",
+    "Method": "GetById",
+    "RelativePath": "api/Spaceships/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "StarWarsQuest.Api.Models.Spaceship",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetSpaceship"
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.SpaceshipsController",
+    "Method": "Update",
+    "RelativePath": "api/Spaceships/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "spaceship",
+        "Type": "StarWarsQuest.Api.DTO.SpaceshipsDTOs.SpaceshipDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "StarWarsQuest.Api.Models.Spaceship",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.SpaceshipsController",
+    "Method": "Delete",
+    "RelativePath": "api/Spaceships/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "StarWarsQuest.Api.Models.Spaceship",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.SpaceshipsController",
+    "Method": "GetByName",
+    "RelativePath": "api/Spaceships/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "StarWarsQuest.Api.Models.Character",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.SpaceshipsController",
+    "Method": "GetAssignedQuest",
+    "RelativePath": "api/Spaceships/assigned/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "StarWarsQuest.Api.Models.Quest",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StarWarsQuest.Api.Controllers.SpaceshipsController",
+    "Method": "GetAvaliableShips",
+    "RelativePath": "api/Spaceships/avaliable",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[StarWarsQuest.Api.Models.Spaceship, StarWarsQuest.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

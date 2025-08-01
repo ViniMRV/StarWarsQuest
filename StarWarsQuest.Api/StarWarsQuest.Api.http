@@ -1,0 +1,6 @@
+@StarWarsQuest.Api_HostAddress = http://localhost:5258
+
+GET {{StarWarsQuest.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
