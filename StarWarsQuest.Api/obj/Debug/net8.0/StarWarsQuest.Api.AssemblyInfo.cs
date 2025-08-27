@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StarWarsQuest.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2e7ec2b7518e603f5b458f5cf04fc3ca5dfe3a2")]
 [assembly: System.Reflection.AssemblyProductAttribute("StarWarsQuest.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StarWarsQuest.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
